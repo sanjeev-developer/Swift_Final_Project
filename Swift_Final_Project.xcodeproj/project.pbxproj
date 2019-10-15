@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1996DC235682D500B7102C /* FullTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996DB235682D500B7102C /* FullTime.swift */; };
+		9B1996DE2356833B00B7102C /* CommisionBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996DD2356833B00B7102C /* CommisionBasedPartTime.swift */; };
 		9BAD106423567C64009999A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD106323567C64009999A3 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9B1996DB235682D500B7102C /* FullTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTime.swift; sourceTree = "<group>"; };
+		9B1996DD2356833B00B7102C /* CommisionBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommisionBasedPartTime.swift; sourceTree = "<group>"; };
 		9BAD106023567C64009999A3 /* Swift_Final_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_Final_Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAD106323567C64009999A3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B1996DA2356823C00B7102C /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				9B1996DB235682D500B7102C /* FullTime.swift */,
+				9B1996DD2356833B00B7102C /* CommisionBasedPartTime.swift */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
 		9BAD105723567C64009999A3 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +70,7 @@
 		9BAD106223567C64009999A3 /* Swift_Final_Project */ = {
 			isa = PBXGroup;
 			children = (
+				9B1996DA2356823C00B7102C /* Employee */,
 				9BAD106323567C64009999A3 /* main.swift */,
 			);
 			path = Swift_Final_Project;
@@ -120,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BAD106423567C64009999A3 /* main.swift in Sources */,
+				9B1996DE2356833B00B7102C /* CommisionBasedPartTime.swift in Sources */,
+				9B1996DC235682D500B7102C /* FullTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
