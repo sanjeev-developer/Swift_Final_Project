@@ -28,3 +28,10 @@ public double calculateearning()
 
 var name = "";
 var age = "";
+
+func calculatebirthyear(i:Int)-> Int
+{
+    return i;
+}
+
+

@@ -12,6 +12,8 @@
 		9B1996E0235683BE00B7102C /* FixedBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996DF235683BE00B7102C /* FixedBasedPartTime.swift */; };
 		9B1996E2235687F400B7102C /* Intern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E1235687F400B7102C /* Intern.swift */; };
 		9B1996E42356884A00B7102C /* PartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E32356884A00B7102C /* PartTime.swift */; };
+		9B1996E6235694C400B7102C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E5235694C400B7102C /* Model.swift */; };
+		9B1996E8235695FF00B7102C /* JsonResponse.json in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E7235695FF00B7102C /* JsonResponse.json */; };
 		9BAD106423567C64009999A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD106323567C64009999A3 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		9B1996DF235683BE00B7102C /* FixedBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedBasedPartTime.swift; sourceTree = "<group>"; };
 		9B1996E1235687F400B7102C /* Intern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intern.swift; sourceTree = "<group>"; };
 		9B1996E32356884A00B7102C /* PartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartTime.swift; sourceTree = "<group>"; };
+		9B1996E5235694C400B7102C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9B1996E7235695FF00B7102C /* JsonResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JsonResponse.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		9BAD106023567C64009999A3 /* Swift_Final_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_Final_Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAD106323567C64009999A3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +60,8 @@
 				9B1996DF235683BE00B7102C /* FixedBasedPartTime.swift */,
 				9B1996E1235687F400B7102C /* Intern.swift */,
 				9B1996E32356884A00B7102C /* PartTime.swift */,
+				9B1996E5235694C400B7102C /* Model.swift */,
+				9B1996E7235695FF00B7102C /* JsonResponse.json */,
 			);
 			path = Employee;
 			sourceTree = "<group>";
@@ -142,11 +148,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1996E6235694C400B7102C /* Model.swift in Sources */,
 				9B1996E2235687F400B7102C /* Intern.swift in Sources */,
 				9B1996E0235683BE00B7102C /* FixedBasedPartTime.swift in Sources */,
 				9BAD106423567C64009999A3 /* main.swift in Sources */,
 				9B1996E42356884A00B7102C /* PartTime.swift in Sources */,
 				9B1996DE2356833B00B7102C /* CommisionBasedPartTime.swift in Sources */,
+				9B1996E8235695FF00B7102C /* JsonResponse.json in Sources */,
 				9B1996DC235682D500B7102C /* FullTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
