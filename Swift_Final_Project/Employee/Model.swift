@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Newdata {
+
     // MARK: - Welcome
     struct Welcome: Codable {
         let jsondata: [Jsondatum]
@@ -47,5 +47,5 @@ class Newdata {
         }
     }
 
-}
+
 

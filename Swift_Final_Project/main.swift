@@ -10,3 +10,5 @@ import Foundation
 
 
 
+var obj = JsonParsing()
+obj.dataparsing()

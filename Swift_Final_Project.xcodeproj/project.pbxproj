@@ -14,18 +14,27 @@
 		9B1996E42356884A00B7102C /* PartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E32356884A00B7102C /* PartTime.swift */; };
 		9B1996E6235694C400B7102C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E5235694C400B7102C /* Model.swift */; };
 		9B1996E8235695FF00B7102C /* JsonResponse.json in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E7235695FF00B7102C /* JsonResponse.json */; };
-		9B1996E92356A6FD00B7102C /* JsonResponse.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B1996E7235695FF00B7102C /* JsonResponse.json */; };
+		9BA651A22357CD41009A7205 /* JsonResponse.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B1996E7235695FF00B7102C /* JsonResponse.json */; };
 		9BAD106423567C64009999A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD106323567C64009999A3 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9BA651A12357CD3A009A7205 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				9BA651A22357CD41009A7205 /* JsonResponse.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BAD105E23567C64009999A3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
-				9B1996E92356A6FD00B7102C /* JsonResponse.json in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -39,6 +48,7 @@
 		9B1996E32356884A00B7102C /* PartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartTime.swift; sourceTree = "<group>"; };
 		9B1996E5235694C400B7102C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9B1996E7235695FF00B7102C /* JsonResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JsonResponse.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		9BA6519C2357CA8E009A7205 /* Employee.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Employee.json; sourceTree = "<group>"; };
 		9BAD106023567C64009999A3 /* Swift_Final_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_Final_Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAD106323567C64009999A3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,9 +73,17 @@
 				9B1996E1235687F400B7102C /* Intern.swift */,
 				9B1996E32356884A00B7102C /* PartTime.swift */,
 				9B1996E5235694C400B7102C /* Model.swift */,
-				9B1996E7235695FF00B7102C /* JsonResponse.json */,
 			);
 			path = Employee;
+			sourceTree = "<group>";
+		};
+		9BA6519B2357CA6B009A7205 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9B1996E7235695FF00B7102C /* JsonResponse.json */,
+				9BA6519C2357CA8E009A7205 /* Employee.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		9BAD105723567C64009999A3 = {
@@ -87,6 +105,7 @@
 		9BAD106223567C64009999A3 /* Swift_Final_Project */ = {
 			isa = PBXGroup;
 			children = (
+				9BA6519B2357CA6B009A7205 /* Data */,
 				9B1996DA2356823C00B7102C /* Employee */,
 				9BAD106323567C64009999A3 /* main.swift */,
 			);
@@ -103,6 +122,7 @@
 				9BAD105C23567C64009999A3 /* Sources */,
 				9BAD105D23567C64009999A3 /* Frameworks */,
 				9BAD105E23567C64009999A3 /* CopyFiles */,
+				9BA651A12357CD3A009A7205 /* CopyFiles */,
 			);
 			buildRules = (
 			);

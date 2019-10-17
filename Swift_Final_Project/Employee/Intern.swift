@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+
+public class Intern
+{
+    func demoreturn (x : Int, y : Int)->Int
+    {
+        return x+y
+    }
+    
+}
