@@ -15,6 +15,7 @@
 		9B1996E6235694C400B7102C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E5235694C400B7102C /* Model.swift */; };
 		9B1996E8235695FF00B7102C /* JsonResponse.json in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E7235695FF00B7102C /* JsonResponse.json */; };
 		9BA651A22357CD41009A7205 /* JsonResponse.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B1996E7235695FF00B7102C /* JsonResponse.json */; };
+		9BA651A52357F7E7009A7205 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA651A42357F7E7009A7205 /* Employee.swift */; };
 		9BAD106423567C64009999A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD106323567C64009999A3 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		9B1996E5235694C400B7102C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9B1996E7235695FF00B7102C /* JsonResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JsonResponse.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		9BA6519C2357CA8E009A7205 /* Employee.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Employee.json; sourceTree = "<group>"; };
+		9BA651A42357F7E7009A7205 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		9BAD106023567C64009999A3 /* Swift_Final_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_Final_Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAD106323567C64009999A3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				9B1996E1235687F400B7102C /* Intern.swift */,
 				9B1996E32356884A00B7102C /* PartTime.swift */,
 				9B1996E5235694C400B7102C /* Model.swift */,
+				9BA651A42357F7E7009A7205 /* Employee.swift */,
 			);
 			path = Employee;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B1996E6235694C400B7102C /* Model.swift in Sources */,
+				9BA651A52357F7E7009A7205 /* Employee.swift in Sources */,
 				9B1996E2235687F400B7102C /* Intern.swift in Sources */,
 				9B1996E0235683BE00B7102C /* FixedBasedPartTime.swift in Sources */,
 				9BAD106423567C64009999A3 /* main.swift in Sources */,
