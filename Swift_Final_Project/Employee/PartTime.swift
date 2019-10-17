@@ -27,6 +27,8 @@ public class JsonParsing {
             
            // print(json)
             
+             var modobj = Model()
+            
             // MARK: - Welcome
             struct Welcome: Codable {
                 let jsondata: [Jsondatum]
@@ -64,6 +66,7 @@ public class JsonParsing {
                     case id, make, plate, model, year, insurance, type, doors
                 }
             }
+
             
             do {
                 //here dataResponse received from a network request
@@ -79,12 +82,11 @@ public class JsonParsing {
                 for i in 0...model.jsondata.count-1{
                     
                     var compare = "Intern"
-                    
                     guard compare == model.jsondata[i].type else {
                         return
                     }
-                    print("Hello JavaTpoint \(model.jsondata[i].vehicle?.type)")
-                    print("Hello JavaTpoint \(model.jsondata[i].vehicle?.type)")
+                   // print("Hello JavaTpoint \(model.jsondata[i].vehicle?.type)")
+                   // print("Hello JavaTpoint \(model.jsondata[i].vehicle?.insurance)")
                     
                     var objectone = Intern()
                     let result : Int = objectone.demoreturn(x: model.jsondata[i].age, y: model.jsondata[i].id)
