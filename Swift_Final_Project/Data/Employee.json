@@ -58,7 +58,7 @@
             "rate": 20.0,
             "hoursWorked": 165,
             "fixedAmount": 130.0,
-            "type": "PartTime / Fixed Amount"
+            "type": "PartTime_Fixed_Amount"
         },
         {
             "@class": "ca.lambton.payroll.employee.CommissionBasedPartTime",

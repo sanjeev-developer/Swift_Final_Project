@@ -10,6 +10,7 @@ import Foundation
 
 
 
+
 public class JsonParsing {
     
     
@@ -27,7 +28,7 @@ public class JsonParsing {
                 return
             }
             
-            // print(json)
+             print(json)
             
             //     var modobj = Model()
             
@@ -83,18 +84,40 @@ public class JsonParsing {
                 
                 for i in 0...model.jsondata.count-1{
                     
-                    var compare = "Intern"
-                    guard compare == model.jsondata[i].type else {
+                    guard Employee.emptype.Intern.rawValue == model.jsondata[i].type else {
                         return
                     }
-                    // print("Hello JavaTpoint \(model.jsondata[i].vehicle?.type)")
-                    // print("Hello JavaTpoint \(model.jsondata[i].vehicle?.insurance)")
+                  //  print("Hello JavaTpoint \(model.jsondata[i].vehicle!.type)")
+                    print("Hello JavaTpoint \(model.jsondata[i].type)")
                     
-                     var internobj = Intern(x: model.jsondata[i].schoolName, y: model.jsondata[i].))
+                    // var internobj = Intern(x: model.jsondata[i].schoolName, y: model.jsondata[i].))
                     // let result : Int = internobj.demoreturn(x: model.jsondata[i].age, y: model.jsondata[i].id)
-                    // print(result)
+                   // print("result")
                     
-                    break
+               
+                    guard Employee.emptype.FullTime.rawValue == model.jsondata[i].type else {
+                        return
+                    }
+                    
+                     print("Hello JavaTpoint \(model.jsondata[i].type)")
+                    
+                   
+                    
+                    guard Employee.emptype.PartTime_Fixed_Amount.rawValue == model.jsondata[i].type else {
+                        return
+                    }
+                    
+                     print("Hello JavaTpoint \(model.jsondata[i].type)")
+                    
+                  
+                    
+                    guard Employee.emptype.PartTime_Commissioned.rawValue == model.jsondata[i].type else {
+                        return
+                    }
+                    
+                     print("Hello JavaTpoint \(model.jsondata[i].type)")
+                    
+                
                 }
                 
                 print(model.jsondata.count) //Output - 1221
@@ -106,3 +129,6 @@ public class JsonParsing {
     }
     
 }
+
+var obj = JsonParsing()
+obj.dataparsing()
