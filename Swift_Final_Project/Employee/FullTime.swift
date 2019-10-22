@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FullTime {
+class FullTime  {
     var bonous:Double!
     var salary:Double!
     var total:Double!

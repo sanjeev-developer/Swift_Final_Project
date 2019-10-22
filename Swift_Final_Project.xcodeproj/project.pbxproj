@@ -17,6 +17,7 @@
 		9BA651A22357CD41009A7205 /* JsonResponse.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B1996E7235695FF00B7102C /* JsonResponse.json */; };
 		9BA651A52357F7E7009A7205 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA651A42357F7E7009A7205 /* Employee.swift */; };
 		9BAD106423567C64009999A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD106323567C64009999A3 /* main.swift */; };
+		9BBF443C235E8963006981C6 /* DisplayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF443B235E8963006981C6 /* DisplayProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		9BA651A42357F7E7009A7205 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		9BAD106023567C64009999A3 /* Swift_Final_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_Final_Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAD106323567C64009999A3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9BBF443B235E8963006981C6 /* DisplayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +110,20 @@
 		9BAD106223567C64009999A3 /* Swift_Final_Project */ = {
 			isa = PBXGroup;
 			children = (
+				9BBF443A235E88B3006981C6 /* Protocol */,
 				9BA6519B2357CA6B009A7205 /* Data */,
 				9B1996DA2356823C00B7102C /* Employee */,
 				9BAD106323567C64009999A3 /* main.swift */,
 			);
 			path = Swift_Final_Project;
+			sourceTree = "<group>";
+		};
+		9BBF443A235E88B3006981C6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF443B235E8963006981C6 /* DisplayProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 				9BA651A52357F7E7009A7205 /* Employee.swift in Sources */,
 				9B1996E2235687F400B7102C /* Intern.swift in Sources */,
 				9B1996E0235683BE00B7102C /* FixedBasedPartTime.swift in Sources */,
+				9BBF443C235E8963006981C6 /* DisplayProtocol.swift in Sources */,
 				9BAD106423567C64009999A3 /* main.swift in Sources */,
 				9B1996E42356884A00B7102C /* PartTime.swift in Sources */,
 				9B1996DE2356833B00B7102C /* CommisionBasedPartTime.swift in Sources */,

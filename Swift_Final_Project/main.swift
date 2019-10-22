@@ -90,8 +90,8 @@ public class JsonParsing {
                     // print("Hello JavaTpoint \(model.jsondata[i].vehicle?.type)")
                     // print("Hello JavaTpoint \(model.jsondata[i].vehicle?.insurance)")
                     
-                  //  var objectone = Intern()
-                    // let result : Int = objectone.demoreturn(x: model.jsondata[i].age, y: model.jsondata[i].id)
+                     var internobj = Intern(x: model.jsondata[i].schoolName, y: model.jsondata[i].))
+                    // let result : Int = internobj.demoreturn(x: model.jsondata[i].age, y: model.jsondata[i].id)
                     // print(result)
                     
                     break
