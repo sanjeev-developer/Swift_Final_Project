@@ -8,16 +8,37 @@
 
 import Foundation
 
-class FullTime  {
-    var bonous:Double!
-    var salary:Double!
-    var total:Double!
-    var employementType:String!
-    func calcEarning() -> Double  {
-        var x:Double = 0
-        x = salary + bonous
-        return x
+class FullTime : Employee
+{
+    var bonus:Double = 0
+    var salary:Double = 0
+    var total:Double{
+        return salary + bonus
     }
-}
+    
+    init(id : Int,name : String, age : Int, bonus : Int, salary : Int)
+    {
+        super.init(name: name, id: id, age: age)
+        self.bonus = Double(bonus)
+        self.salary = Double(salary)
+    }
+    
+    override func displayData()
+    {
+        super.displayData()
+        print("Salary :\(salary)")
+        print("Bonus :\(bonus)")
+        print("Total Pay : \(total)")
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
+}
 

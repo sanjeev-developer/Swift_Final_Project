@@ -8,15 +8,39 @@
 
 import Foundation
 
-class Employee {
-    var name:String = ""
+class Employee : DisplayProtocol
+{
+   
     
-    enum emptype : String{
-        case Intern
-        case FullTime
-        case PartTime_Fixed_Amount
-        case PartTime_Commissioned
+    var name:String
+    var id : Int
+    var age : Int
+    var birthYear : Int{
+        return 2019 - age
     }
+    
+    
+  
+    
+    init(name : String, id : Int, age : Int) {
+        self.id = id
+        self.age = age
+        self.name = name
+    }
+    
+    func displayData() {
+        print("*******************************************************")
+        print("Employee ID : \(id)")
+        print("Employee Name : \(name)")
+        print("Employee BirthYear : \(birthYear)")
+        
+    }
+    
+    func calcEarning ()-> Double
+    {
+        return 1000
+    }
+    
     
     func calcBirthYear(a:CLong ) -> CLong {
         var  x:CLong = 0

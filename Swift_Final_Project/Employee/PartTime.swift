@@ -8,8 +8,26 @@
 
 import Foundation
 
-class PartTime {
-    var rate: Double!
-    var hoursWorked: Double!
+class PartTime : Employee
+{
+    var rate : Double
+    var hWorked : Double
+    
+    
+    
+    init (id : Int,name : String,age : Int,hrate : Double, hoursWorked : Double)
+    {
+        self.rate = hrate
+        self.hWorked = hoursWorked
+        super.init(name: name, id : id, age: age)
+    }
+    
+    override func displayData() {
+        super.displayData()
+        print("Hourly Wage : \(rate)")
+        print("Hours Worked : \(hWorked)")
+       
+        
+    }
 }
 

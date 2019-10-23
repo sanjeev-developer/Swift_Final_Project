@@ -10,6 +10,6 @@ import Foundation
 
 protocol DisplayProtocol
 {
-    func DisplayData()
+    func displayData()
     
 }

@@ -14,6 +14,13 @@ import Foundation
 public class JsonParsing {
     
     
+    enum emptype : String{
+        case Intern
+        case FullTime
+        case PartTime_Fixed_Amount
+        case PartTime_Commissioned
+    }
+    
     func dataparsing() {
         
         let url = Bundle.main.url(forResource: "JsonResponse", withExtension: "json")!
@@ -24,11 +31,10 @@ public class JsonParsing {
                 return
             }
             
-            guard let json = try? JSONSerialization.jsonObject(with: jsonData, options: []) else {
+            guard (try? JSONSerialization.jsonObject(with: jsonData, options: [])) != nil else {
                 return
             }
             
-             print(json)
             
             //     var modobj = Model()
             
@@ -74,53 +80,38 @@ public class JsonParsing {
             do {
                 //here dataResponse received from a network request
                 let decoder = JSONDecoder()
+                
+                
                 //Decode JSON Response Data
                 let model = try decoder.decode(Welcome.self, from: jsonData)
+
                 
-                for i in 0...model.jsondata.count-1{
-                    // anArray.append("This String")
-                    print("Hello JavaTpoint \(model.jsondata[i].age)")
+                //iterating through the data
+                for i in 0..<model.jsondata.count{
+                    
+                    if(emptype.Intern.rawValue == model.jsondata[i].type)
+                    {
+                        let internobj = Intern(id: model.jsondata[i].id, name: model.jsondata[i].name, age: model.jsondata[i].age, schoolName: model.jsondata[i].schoolName!, employeeType: model.jsondata[i].type)
+                        internobj.displayData()
+                    }
+                    else if (emptype.FullTime.rawValue == model.jsondata[i].type)
+                    {
+                        let fulltimeObj = FullTime(id: model.jsondata[i].id, name: model.jsondata[i].name, age: model.jsondata[i].age, bonus: model.jsondata[i].bonus!, salary: model.jsondata[i].salary!)
+                        fulltimeObj.displayData()
+                    }
+                    else if(emptype.PartTime_Fixed_Amount.rawValue == model.jsondata[i].type)
+                    {
+                        let fixedbasedPT = FixedBasedPartTime(id: model.jsondata[i].id, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate: Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), fixedAmount: Double(model.jsondata[i].fixedAmount!))
+                        fixedbasedPT.displayData()
+                    }
+                    else if(emptype.PartTime_Commissioned.rawValue == model.jsondata[i].type)
+                    {
+                        let commisionBasedPt = CommisionBasedPartTime(id: model.jsondata[i].id, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate:Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), commision: Double(model.jsondata[i].commissionPercent!))
+                        commisionBasedPt.displayData()
+                    }
                 }
                 
-                for i in 0...model.jsondata.count-1{
-                    
-                    guard Employee.emptype.Intern.rawValue == model.jsondata[i].type else {
-                        return
-                    }
-                  //  print("Hello JavaTpoint \(model.jsondata[i].vehicle!.type)")
-                    print("Hello JavaTpoint \(model.jsondata[i].type)")
-                    
-                    // var internobj = Intern(x: model.jsondata[i].schoolName, y: model.jsondata[i].))
-                    // let result : Int = internobj.demoreturn(x: model.jsondata[i].age, y: model.jsondata[i].id)
-                   // print("result")
-                    
-               
-                    guard Employee.emptype.FullTime.rawValue == model.jsondata[i].type else {
-                        return
-                    }
-                    
-                     print("Hello JavaTpoint \(model.jsondata[i].type)")
-                    
-                   
-                    
-                    guard Employee.emptype.PartTime_Fixed_Amount.rawValue == model.jsondata[i].type else {
-                        return
-                    }
-                    
-                     print("Hello JavaTpoint \(model.jsondata[i].type)")
-                    
-                  
-                    
-                    guard Employee.emptype.PartTime_Commissioned.rawValue == model.jsondata[i].type else {
-                        return
-                    }
-                    
-                     print("Hello JavaTpoint \(model.jsondata[i].type)")
-                    
-                
-                }
-                
-                print(model.jsondata.count) //Output - 1221
+              
             } catch let parsingError {
                 print("Error", parsingError)
             }

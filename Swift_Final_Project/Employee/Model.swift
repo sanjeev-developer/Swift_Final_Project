@@ -24,7 +24,7 @@ public class Model
             let vehicle: Vehicle?
             let schoolName: String?
             let type: String
-            let salary, bonus, rate, hoursWorked: Int?
+            let salary, bonus, rate, hoursWorked: Double?
             let fixedAmount, commissionPercent: Int?
             
             enum CodingKeys: String, CodingKey {

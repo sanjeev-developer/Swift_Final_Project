@@ -8,18 +8,31 @@
 
 import Foundation
 
-class FixedBasedPartTime: PartTime {
-    var fixedAmount:Double!
-    var totalPay:Double!
-    var employementType:String!
-    init(fixedAmount:Double,totalPay:Double,employementType:String) {
+class FixedBasedPartTime: PartTime
+{
+    var fixedAmount : Double = 0
+    var totalPay : Double {
+        return super.rate * super.hWorked + fixedAmount
+    }
+
+    
+    init(id: Int,name : String,age : Int,hrate : Double, hoursWorked: Double,fixedAmount:Double)
+    {
+        
+        super.init(id: id, name: name, age: age, hrate: hrate, hoursWorked: hoursWorked)
         self.fixedAmount = fixedAmount
-        self.totalPay = totalPay
-        self.employementType = employementType
+        
+        
     }
-    func calcEarning()  {
-        var  x:Double = 0
-        x = rate * hoursWorked
-        x = x + fixedAmount
+    
+    
+    override func displayData()
+    {
+        super.displayData()
+        print("Fixed Amount : \(fixedAmount)")
+        print("Total Pay : \(totalPay)")
     }
+    
+    
+    
 }

@@ -8,19 +8,25 @@
 
 import Foundation
 
-
-public class Intern
+class Intern : Employee
 {
-    var schoolName:String!
-    var totalPay:Double!
-    var birtYear:Int!
-    var employeeType: String!
-    
-    init(schoolName:String,totalPay:Double,birthYear:Int,employeeType:String){
-        self.schoolName = schoolName
-        self.totalPay = totalPay
-        self.birtYear = birthYear
-        self.employeeType = employeeType
+    var schoolName:String
+    var totalPay:Double {
+        return super.calcEarning()
     }
     
+    init( id : Int,name : String , age : Int, schoolName:String,employeeType:String)
+    {
+        
+        self.schoolName = schoolName
+        super.init(name: name, id: id, age: age)
+       
+    }
+    
+    override func displayData() {
+        super.displayData()
+        print("School Name : \(schoolName)")
+        print("Salary : \(totalPay)")
+        
+    }
 }
