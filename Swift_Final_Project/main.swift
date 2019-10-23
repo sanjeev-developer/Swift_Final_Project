@@ -34,47 +34,8 @@ public class JsonParsing {
             guard (try? JSONSerialization.jsonObject(with: jsonData, options: [])) != nil else {
                 return
             }
-            
-            
-            //     var modobj = Model()
-            
-            // MARK: - Welcome
-            struct Welcome: Codable {
-                let jsondata: [Jsondatum]
-            }
-            
-            // MARK: - Jsondatum
-            struct Jsondatum: Codable {
-                let jsondatumClass: String
-                let id: Int
-                let name: String
-                let age: Int
-                let vehicle: Vehicle?
-                let schoolName: String?
-                let type: String
-                let salary, bonus, rate, hoursWorked: Int?
-                let fixedAmount, commissionPercent: Int?
-                
-                enum CodingKeys: String, CodingKey {
-                    case jsondatumClass = "@class"
-                    case id, name, age, vehicle, schoolName, type, salary, bonus, rate, hoursWorked, fixedAmount, commissionPercent
-                }
-            }
-            
-            // MARK: - Vehicle
-            struct Vehicle: Codable {
-                let vehicleClass: String
-                let id: Int
-                let make, plate, model, year: String
-                let insurance: Bool
-                let type: String
-                let doors: Int?
-                
-                enum CodingKeys: String, CodingKey {
-                    case vehicleClass = "@class"
-                    case id, make, plate, model, year, insurance, type, doors
-                }
-            }
+
+
             
             
             do {
@@ -83,7 +44,7 @@ public class JsonParsing {
                 
                 
                 //Decode JSON Response Data
-                let model = try decoder.decode(Welcome.self, from: jsonData)
+                let model = try decoder.decode(Model.Welcome.self, from: jsonData)
 
                 
                 //iterating through the data
@@ -91,7 +52,8 @@ public class JsonParsing {
                     
                     if(emptype.Intern.rawValue == model.jsondata[i].type)
                     {
-                        let internobj = Intern(id: model.jsondata[i].id, name: model.jsondata[i].name, age: model.jsondata[i].age, schoolName: model.jsondata[i].schoolName!, employeeType: model.jsondata[i].type)
+                        let internobj = Intern(id: model.jsondata[i].id, name: model.jsondata[i].name, age: model.jsondata[i].age, schoolName: model.jsondata[i].schoolName!, employeeType: model.jsondata[i].type, vdata: Model())
+                        
                         internobj.displayData()
                     }
                     else if (emptype.FullTime.rawValue == model.jsondata[i].type)

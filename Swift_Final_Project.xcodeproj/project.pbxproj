@@ -14,7 +14,7 @@
 		9B1996E42356884A00B7102C /* PartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E32356884A00B7102C /* PartTime.swift */; };
 		9B1996E6235694C400B7102C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E5235694C400B7102C /* Model.swift */; };
 		9B1996E8235695FF00B7102C /* JsonResponse.json in Sources */ = {isa = PBXBuildFile; fileRef = 9B1996E7235695FF00B7102C /* JsonResponse.json */; };
-		9B355AEA235FD97B00D60323 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B355AE9235FD97B00D60323 /* Vehicle.swift */; };
+		9B355AEA235FD97B00D60323 /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B355AE9235FD97B00D60323 /* Vehicles.swift */; };
 		9B355AEC235FDAA300D60323 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B355AEB235FDAA300D60323 /* Car.swift */; };
 		9B355AEE235FDAB600D60323 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B355AED235FDAB600D60323 /* Motorcycle.swift */; };
 		9BA651A22357CD41009A7205 /* JsonResponse.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B1996E7235695FF00B7102C /* JsonResponse.json */; };
@@ -53,7 +53,7 @@
 		9B1996E32356884A00B7102C /* PartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartTime.swift; sourceTree = "<group>"; };
 		9B1996E5235694C400B7102C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9B1996E7235695FF00B7102C /* JsonResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JsonResponse.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
-		9B355AE9235FD97B00D60323 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		9B355AE9235FD97B00D60323 /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
 		9B355AEB235FDAA300D60323 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		9B355AED235FDAB600D60323 /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
 		9BA6519C2357CA8E009A7205 /* Employee.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Employee.json; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		9B355AE8235FD95F00D60323 /* Vehicle */ = {
 			isa = PBXGroup;
 			children = (
-				9B355AE9235FD97B00D60323 /* Vehicle.swift */,
+				9B355AE9235FD97B00D60323 /* Vehicles.swift */,
 				9B355AEB235FDAA300D60323 /* Car.swift */,
 				9B355AED235FDAB600D60323 /* Motorcycle.swift */,
 			);
@@ -211,7 +211,7 @@
 				9BAD106423567C64009999A3 /* main.swift in Sources */,
 				9B1996E42356884A00B7102C /* PartTime.swift in Sources */,
 				9B1996DE2356833B00B7102C /* CommisionBasedPartTime.swift in Sources */,
-				9B355AEA235FD97B00D60323 /* Vehicle.swift in Sources */,
+				9B355AEA235FD97B00D60323 /* Vehicles.swift in Sources */,
 				9B1996E8235695FF00B7102C /* JsonResponse.json in Sources */,
 				9B1996DC235682D500B7102C /* FullTime.swift in Sources */,
 			);

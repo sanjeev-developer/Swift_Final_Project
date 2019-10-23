@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Motorcycle : Vehicle
+class Motorcycle : Vehicles
 {
     
     

@@ -34,6 +34,9 @@ class Employee : DisplayProtocol
         print("Employee Name : \(name)")
         print("Employee BirthYear : \(birthYear)")
         
+       // var vehicleobj = Vehicle()
+   
+        
     }
     
     func calcEarning ()-> Double

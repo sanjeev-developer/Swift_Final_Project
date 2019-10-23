@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Car : Vehicle
+class Car : Vehicles
 {
     var noOfDoors = Int()
     var model = String()
