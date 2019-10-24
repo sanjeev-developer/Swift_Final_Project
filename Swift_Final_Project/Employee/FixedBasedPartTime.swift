@@ -20,6 +20,7 @@ class FixedBasedPartTime : PartTime
     {
         
         super.init(id: id, type: type, name: name, age: age, hrate: hrate, hoursWorked: hoursWorked, vobj: vobj)
+        
         self.fixedAmount = fixedAmount
         
         
