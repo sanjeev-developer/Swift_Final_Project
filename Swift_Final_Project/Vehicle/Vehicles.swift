@@ -18,7 +18,6 @@ class Vehicles : DisplayProtocol
         self.make = make
         self.plate = plate
         
-        
     }
     
     
