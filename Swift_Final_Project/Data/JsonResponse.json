@@ -47,7 +47,7 @@
     "vehicle": {
     "@class": "Motorcycle",
     "id": 0,
-    "make": "YAMATO",
+    "make": "Yamaha",
     "plate": "EFGH-875 ",
     "model": "MODEL 3",
     "year" : "2018",
