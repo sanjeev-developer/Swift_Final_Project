@@ -65,20 +65,7 @@
     "name": "Seongyeob",
     "age": 29,
     
-    "rate": 40.0,
-    "hoursWorked": 178,
-    "commissionPercent": 20,
-    "type": "PartTime_Commissioned",
-    "vehicle": {
-        "@class": "Motorcycle",
-        "id": 0,
-        "make": "Honda",
-        "plate": "ABCD-123",
-        "model": "MODEL 1",
-        "year" : "2015",
-        "insurance": true,
-        "type": "Motorcycle"
-    }
+    
     }
     ]
 }
