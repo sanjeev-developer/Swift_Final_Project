@@ -9,6 +9,8 @@
 import Foundation
 class Vehicles : DisplayProtocol
 {
+    
+    
     var make : String
     var plate : String
     
