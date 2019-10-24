@@ -23,6 +23,8 @@ class FullTime : Employee
         self.salary = Double(salary)
     }
     
+    
+    
     override func displayData()
     {
         super.displayData()
