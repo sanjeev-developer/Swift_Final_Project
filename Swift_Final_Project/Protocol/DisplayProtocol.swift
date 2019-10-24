@@ -8,4 +8,8 @@
 
 import Foundation
 
-
+protocol DisplayProtocol
+{
+    func displayData()
+    
+}
