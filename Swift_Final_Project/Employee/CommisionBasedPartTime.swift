@@ -13,6 +13,8 @@ class CommisionBasedPartTime: PartTime
     var commision : Double = 0
     
     var totalPay : Double{
+        return super.rate * super.hWorked + commision
+
     }
     
     init(id : Int , type: String, name: String,age : Int,hrate : Double, hoursWorked: Double, commision:Double, vobj: Model.Vehicle)
