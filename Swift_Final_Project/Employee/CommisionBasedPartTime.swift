@@ -12,7 +12,8 @@ class CommisionBasedPartTime: PartTime
 {
     var commision : Double = 0
     
-    var totalPay : Double{
+    var totalPay : Double
+    {
         return super.rate * super.hWorked + commision
 
     }
