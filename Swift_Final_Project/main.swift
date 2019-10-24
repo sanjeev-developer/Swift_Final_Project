@@ -43,7 +43,7 @@ public class JsonParsing {
 
                 
                 //iterating through the data
-               
+                for i in 0..<model.jsondata.count{
                     
                     if(emptype.Intern.rawValue == model.jsondata[i].type)
                     {
