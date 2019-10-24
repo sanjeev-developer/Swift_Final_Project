@@ -42,6 +42,7 @@ public class JsonParsing {
                 let model = try decoder.decode(Model.Welcome.self, from: jsonData)
 
                 
+                //iterating through the data
                 for i in 0..<model.jsondata.count{
                     
                     if(emptype.Intern.rawValue == model.jsondata[i].type)
