@@ -28,10 +28,4 @@ class Motorcycle : Vehicles
         
     }
     
-    override func displayData() {
-        super.displayData()
-        print("Model : \(model)")
-        print("Year of Make : \(yearOfMake)")
-        print("Insurance : \(insurance)")
-    }
-}
+    
