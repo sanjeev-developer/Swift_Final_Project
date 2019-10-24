@@ -19,6 +19,7 @@ class Motorcycle : Vehicles
     
     
     init(make : String , plate : String, model : String, insurance : Bool , year: String)
+    
     {
         super.init(make: make, plate: plate)
         self.model = model
