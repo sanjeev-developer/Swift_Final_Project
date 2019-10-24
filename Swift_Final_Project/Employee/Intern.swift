@@ -18,6 +18,7 @@ class Intern : Employee
     init( id : Int,type: String,name : String , age : Int, schoolName:String, employeeType:String, vobj: Model.Vehicle)
     {
         
+        
         self.schoolName = schoolName
         super.init(name: name, id: id, age: age, vobj: vobj, type: type)
        
