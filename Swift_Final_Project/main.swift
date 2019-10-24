@@ -23,7 +23,15 @@ public class JsonParsing {
         let url = Bundle.main.url(forResource: "JsonResponse", withExtension: "json")!
         
         
-       
+       do {
+                  guard let jsonData = try? Data(contentsOf: url) else {
+                      return
+                  }
+                  
+                  guard (try? JSONSerialization.jsonObject(with: jsonData, options: [])) != nil else {
+                      return
+                  }
+
             
             do {
                 //here dataResponse received from a network request
