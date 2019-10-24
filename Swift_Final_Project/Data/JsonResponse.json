@@ -62,7 +62,7 @@
     {
     "@class": "ca.lambton.payroll.employee.CommissionBasedPartTime",
     "id": 4,
-    "name": "",
+    "name": "Seongyeob",
     "age": 29,
     
     "rate": 40.0,
