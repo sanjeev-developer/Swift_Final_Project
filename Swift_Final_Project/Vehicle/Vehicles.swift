@@ -23,8 +23,6 @@ class Vehicles : DisplayProtocol
     
     }
     
-    
-    
     func displayData() {
         print("Make of Vehicle :\(make)")
         print("Vehicle : \(plate)")
