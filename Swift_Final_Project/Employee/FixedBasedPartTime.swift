@@ -33,6 +33,6 @@ class FixedBasedPartTime : PartTime
         print("Fixed Amount : \(fixedAmount)")
         print("Total Pay : \(totalPay)")
     }
-    
+    //
     
 }
