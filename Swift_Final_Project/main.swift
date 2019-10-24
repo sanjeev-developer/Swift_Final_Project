@@ -78,5 +78,3 @@ public class JsonParsing {
     
 }
 
-var obj = JsonParsing()
-obj.dataparsing()
