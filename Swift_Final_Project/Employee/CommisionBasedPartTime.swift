@@ -26,12 +26,6 @@ class CommisionBasedPartTime : PartTime
     }
     
     
-   override func displayData() {
-          super.displayData()
-          print("Commision : \(commision)")
-          print("Total Salary : \(totalPay)")
-      }
-      
-    
+  
     
 }
