@@ -11,6 +11,12 @@ import Foundation
 public class JsonParsing {
     
     
+    enum emptype : String{
+        case Intern
+        case FullTime
+        case PartTime_Fixed_Amount
+        case PartTime_Commissioned
+    }
     
     func dataparsing() {
         
