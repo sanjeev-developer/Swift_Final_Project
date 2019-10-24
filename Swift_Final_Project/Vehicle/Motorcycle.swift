@@ -13,7 +13,7 @@ class Motorcycle : Vehicles
 {
     
     
-    var model : String = " "
+    var model : String = ""
     var insurance = Bool()
     var yearOfMake = String()
     
