@@ -40,12 +40,9 @@ public class Model
       let make, plate, model, year: String
       let insurance: Bool
       let type: String
-    let doors: Int?
+      let doors: Int?
         
-        enum CodingKeys: String, CodingKey {
-            case vehicleClass = "@class"
-            case id, make, plate, model, year, insurance, type, doors
-        }
+        
     }
 }
 
