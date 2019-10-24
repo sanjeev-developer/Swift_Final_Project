@@ -23,7 +23,6 @@ class FixedBasedPartTime : PartTime
         
         self.fixedAmount = fixedAmount
         
-        
     }
     
     
