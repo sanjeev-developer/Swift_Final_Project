@@ -37,7 +37,7 @@ public class Model
       struct Vehicle: Codable {
       let vehicleClass: String
       let id: Int
-    let make, plate, model, year: String
+      let make, plate, model, year: String
     let insurance: Bool
     let type: String
     let doors: Int?
