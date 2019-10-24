@@ -9,8 +9,7 @@
 import Foundation
 class PartTime : Employee
 {
-    var rate : Double
-    var hWorked : Double
+    
     
     
     init (id : Int, type: String, name : String,age : Int,hrate : Double, hoursWorked : Double, vobj: Model.Vehicle)
