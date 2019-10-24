@@ -31,7 +31,6 @@ class FullTime : Employee
         print("Salary :\(salary)")
         print("Bonus :\(bonus)")
         print("Total Pay : \(total)")
-        
     }
     
 }
