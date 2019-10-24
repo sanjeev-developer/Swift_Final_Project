@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FixedBasedPartTime : PartTime
+class FixedBasedPartTime :  PartTime
 {
     var fixedAmount : Double = 0
     var totalPay : Double {
