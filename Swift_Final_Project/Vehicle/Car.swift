@@ -27,5 +27,8 @@ class Car : Vehicles
         print("Number of Doors \(noOfDoors)")
         print("Model : \(model)")
         print("Year of Make : \(yearOfMake)")
-        print("Insurance : \(insurance)")    }
+        print("Insurance : \(insurance)")
+        
+    
+    }
 }
