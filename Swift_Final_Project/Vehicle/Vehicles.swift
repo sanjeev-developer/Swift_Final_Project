@@ -8,26 +8,4 @@
 
 import Foundation
 
-class Vehicles : DisplayProtocol
-{
-    
-    
-    var make : String
-    var plate : String
-    
-    
-    init(make : String , plate : String){
-        self.make = make
-        self.plate = plate
-        
-    
-    }
-    
-    func displayData() {
-        print("Make of Vehicle :\(make)")
-        print("Vehicle : \(plate)")
-        
-    }
-    
-}
 
