@@ -69,10 +69,7 @@ public class JsonParsing {
                 }
                 
               
-            } catch let parsingError {
-                print("Error", parsingError)
-            }
-            
+            } 
         }
     }
     
