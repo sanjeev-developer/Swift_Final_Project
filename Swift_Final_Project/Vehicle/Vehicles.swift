@@ -11,7 +11,7 @@ class Vehicles : DisplayProtocol
 {
     
     
-    var make : String
+    var make  : String
     var plate : String
     
     init(make : String , plate : String) {
