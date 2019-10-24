@@ -27,7 +27,6 @@ class FullTime : Employee
     
     override func displayData()
     {
-        
         super.displayData()
         print("Salary :\(salary)")
         print("Bonus :\(bonus)")
