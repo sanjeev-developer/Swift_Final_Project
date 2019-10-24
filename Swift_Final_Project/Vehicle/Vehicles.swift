@@ -25,5 +25,7 @@ class Vehicles : DisplayProtocol
         print("Make of Vehicle :\(make)")
         print("Vehicle : \(plate)")
         
-    }}
+    }
+    
+}
 
