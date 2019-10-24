@@ -24,6 +24,7 @@ class Motorcycle : Vehicles
         self.insurance = insurance
         
     }
+    
     override func displayData() {
         super.displayData()
         print("Model : \(model)")
