@@ -33,7 +33,5 @@ class FullTime : Employee
         print("Total Pay : \(total)")
     }
     
-    
-    
 }
 
