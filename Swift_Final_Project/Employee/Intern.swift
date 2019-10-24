@@ -23,3 +23,11 @@ class Intern : Employee
        
     }
     
+    override func displayData() {
+        super.displayData()
+        print("School Name : \(schoolName)")
+        print("Salary : \(totalPay)")
+
+        
+    }
+}
