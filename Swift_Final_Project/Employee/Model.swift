@@ -39,7 +39,7 @@ public class Model
       let id: Int
       let make, plate, model, year: String
       let insurance: Bool
-    let type: String
+      let type: String
     let doors: Int?
         
         enum CodingKeys: String, CodingKey {
