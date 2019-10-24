@@ -35,8 +35,6 @@ public class JsonParsing {
                 return
             }
 
-
-            
             
             do {
                 //here dataResponse received from a network request
@@ -52,23 +50,23 @@ public class JsonParsing {
                     
                     if(emptype.Intern.rawValue == model.jsondata[i].type)
                     {
-                        let internobj = Intern(id: model.jsondata[i].id, name: model.jsondata[i].name, age: model.jsondata[i].age, schoolName: model.jsondata[i].schoolName!, employeeType: model.jsondata[i].type, vdata: Model())
+                        let internobj = Intern(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, schoolName: model.jsondata[i].schoolName!, employeeType: model.jsondata[i].type, vobj: model.jsondata[i].vehicle!)
                         
                         internobj.displayData()
                     }
                     else if (emptype.FullTime.rawValue == model.jsondata[i].type)
                     {
-                        let fulltimeObj = FullTime(id: model.jsondata[i].id, name: model.jsondata[i].name, age: model.jsondata[i].age, bonus: model.jsondata[i].bonus!, salary: model.jsondata[i].salary!)
+                        let fulltimeObj = FullTime(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, bonus: model.jsondata[i].bonus!, salary: model.jsondata[i].salary!,vobj: model.jsondata[i].vehicle!)
                         fulltimeObj.displayData()
                     }
                     else if(emptype.PartTime_Fixed_Amount.rawValue == model.jsondata[i].type)
                     {
-                        let fixedbasedPT = FixedBasedPartTime(id: model.jsondata[i].id, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate: Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), fixedAmount: Double(model.jsondata[i].fixedAmount!))
+                        let fixedbasedPT = FixedBasedPartTime(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate: Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), fixedAmount: Double(model.jsondata[i].fixedAmount!),vobj: model.jsondata[i].vehicle!)
                         fixedbasedPT.displayData()
                     }
                     else if(emptype.PartTime_Commissioned.rawValue == model.jsondata[i].type)
                     {
-                        let commisionBasedPt = CommisionBasedPartTime(id: model.jsondata[i].id, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate:Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), commision: Double(model.jsondata[i].commissionPercent!))
+                        let commisionBasedPt = CommisionBasedPartTime(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate:Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), commision: Double(model.jsondata[i].commissionPercent!),vobj: model.jsondata[i].vehicle!)
                         commisionBasedPt.displayData()
                     }
                 }

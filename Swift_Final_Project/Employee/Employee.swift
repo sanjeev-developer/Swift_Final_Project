@@ -13,19 +13,20 @@ class Employee : DisplayProtocol
    
     
     var name:String
+    var type:String
     var id : Int
+    var vobj : Model.Vehicle
     var age : Int
     var birthYear : Int{
         return 2019 - age
     }
-    
-    
-  
-    
-    init(name : String, id : Int, age : Int) {
+
+    init(name : String, id : Int, age : Int, vobj: Model.Vehicle, type: String) {
         self.id = id
         self.age = age
         self.name = name
+        self.vobj = vobj
+        self.type = type
     }
     
     func displayData() {
@@ -34,8 +35,14 @@ class Employee : DisplayProtocol
         print("Employee Name : \(name)")
         print("Employee BirthYear : \(birthYear)")
         
-       // var vehicleobj = Vehicle()
-   
+       
+            print("Emoployee has a  : \(vobj.type)")
+            print("  -   Make : \(vobj.make)")
+            print("  -   Year : \(vobj.year)")
+            print("  -   plate : \(vobj.plate)")
+            print("  -   Insurance : \(vobj.insurance)")
+       
+       print("Emoployee is a  : \(type)")
         
     }
     

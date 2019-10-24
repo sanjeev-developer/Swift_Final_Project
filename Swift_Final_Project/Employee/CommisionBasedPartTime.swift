@@ -16,9 +16,9 @@ class CommisionBasedPartTime: PartTime
         return super.rate * super.hWorked + commision
     }
     
-    init(id : Int , name : String,age : Int,hrate : Double, hoursWorked: Double, commision:Double)
+    init(id : Int , type: String, name: String,age : Int,hrate : Double, hoursWorked: Double, commision:Double, vobj: Model.Vehicle)
     {
-        super.init(id: id, name: name, age: age, hrate: hrate, hoursWorked: hoursWorked)
+        super.init(id: id, type:type ,name: name, age: age, hrate: hrate, hoursWorked: hoursWorked, vobj: vobj)
         self.commision = commision
         
     }

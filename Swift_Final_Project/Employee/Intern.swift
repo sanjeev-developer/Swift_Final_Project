@@ -15,12 +15,11 @@ class Intern : Employee
         return super.calcEarning()
     }
     
-    init( id : Int,name : String , age : Int, schoolName:String, employeeType:String, vdata: Model)
+    init( id : Int,type: String,name : String , age : Int, schoolName:String, employeeType:String, vobj: Model.Vehicle)
     {
         
         self.schoolName = schoolName
-        var obj = Vehicles(Model.Vehicle.)
-        super.init(name: name, id: id, age: age)
+        super.init(name: name, id: id, age: age, vobj: vobj, type: type)
        
     }
     
@@ -28,6 +27,7 @@ class Intern : Employee
         super.displayData()
         print("School Name : \(schoolName)")
         print("Salary : \(totalPay)")
+
         
     }
 }

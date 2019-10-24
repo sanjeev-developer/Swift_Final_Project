@@ -16,9 +16,9 @@ class FullTime : Employee
         return salary + bonus
     }
     
-    init(id : Int,name : String, age : Int, bonus : Int, salary : Int)
+    init(id : Int, type:String ,name : String, age : Int, bonus : Int, salary : Int, vobj: Model.Vehicle)
     {
-        super.init(name: name, id: id, age: age)
+        super.init(name: name, id: id, age: age, vobj: vobj, type:type)
         self.bonus = Double(bonus)
         self.salary = Double(salary)
     }
