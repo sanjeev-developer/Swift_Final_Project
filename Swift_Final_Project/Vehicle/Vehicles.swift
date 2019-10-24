@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Vehicles : DisplayProtocol
+class Vehicles: DisplayProtocol
 {
     
     
