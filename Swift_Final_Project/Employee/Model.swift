@@ -15,7 +15,7 @@ public class Model
         let jsondata: [Jsondatum]
     }
     
-    // MARK: - Jsondatum
+   
     struct Jsondatum: Codable {
         let jsondatumClass: String
         let id: Int
