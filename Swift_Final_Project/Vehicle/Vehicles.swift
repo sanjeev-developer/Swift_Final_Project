@@ -7,10 +7,8 @@
 //
 
 import Foundation
-class Vehicles : 
+class Vehicles : DisplayProtocol
 {
-    
-    
     var make : String
     var plate : String
     
