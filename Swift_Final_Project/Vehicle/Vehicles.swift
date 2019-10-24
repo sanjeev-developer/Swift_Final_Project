@@ -20,8 +20,7 @@ class Vehicles : DisplayProtocol
         self.make = make
         self.plate = plate
         
-        
-    }
+        }
     
     func displayData() {
         print("Make of Vehicle :\(make)")
