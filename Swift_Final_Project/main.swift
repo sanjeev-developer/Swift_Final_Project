@@ -61,7 +61,7 @@ public class JsonParsing {
                         let fixedbasedPT = FixedBasedPartTime(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate: Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), fixedAmount: Double(model.jsondata[i].fixedAmount!),vobj: model.jsondata[i].vehicle!)
                         fixedbasedPT.displayData()
                     }
-                     if(emptype.PartTime_Commissioned.rawValue == model.jsondata[i].type)
+                     else if(emptype.PartTime_Commissioned.rawValue == model.jsondata[i].type)
                     {
                         let commisionBasedPt = CommisionBasedPartTime(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate:Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), commision: Double(model.jsondata[i].commissionPercent!),vobj: model.jsondata[i].vehicle!)
                         commisionBasedPt.displayData()
