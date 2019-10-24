@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CommisionBasedPartTime :  PartTime
+class CommisionBasedPartTime : PartTime
 {
     var commision : Double = 0
     
