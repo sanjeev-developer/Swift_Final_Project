@@ -12,9 +12,9 @@ class Vehicles : DisplayProtocol
     
     
     var make : String
-    var plate  : String
+    var plate : String
     
-    init(make : String , plate : String) {
+    init (make : String , plate : String) {
         self.make = make
         self.plate = plate
         
