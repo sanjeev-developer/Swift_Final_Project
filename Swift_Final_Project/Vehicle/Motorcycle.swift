@@ -17,6 +17,7 @@ class Motorcycle : Vehicles
     var insurance = Bool()
     var yearOfMake = String()
     
+    
     init(make : String , plate : String, model : String, insurance : Bool , year: String)
     {
         super.init(make: make, plate: plate)
