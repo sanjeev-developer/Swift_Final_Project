@@ -15,12 +15,7 @@ class Car : Vehicles
     var insurance = Bool()
     
     
-    init(noOfDoors : Int,make  : String, plate : String ,model : String, year : String) {
-        super.init(make: make, plate: plate)
-        self.model = model
-        self.yearOfMake = year
-        self.noOfDoors = noOfDoors
-        }
+    
     
     override func displayData() {
         super.displayData()
